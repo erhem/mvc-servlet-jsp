@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/jsp/index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>com.untar.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RegistrationController</servlet-name>
+        <servlet-class>com.untar.controller.RegistrationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationController</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>RegistrationConfirmController</servlet-name>
+        <servlet-class>com.untar.controller.RegistrationConfirmController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegistrationConfirmController</servlet-name>
+        <url-pattern>/RegistrationConfirm</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MemberAreaController</servlet-name>
+        <servlet-class>com.untar.controller.MemberAreaController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MemberAreaController</servlet-name>
+        <url-pattern>/MemberArea</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogOutController</servlet-name>
+        <servlet-class>com.untar.controller.LogOutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOutController</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditProfileController</servlet-name>
+        <servlet-class>com.untar.controller.EditProfileController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditProfileController</servlet-name>
+        <url-pattern>/EditProfile</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>EditProfileConfirmController</servlet-name>
+        <servlet-class>com.untar.controller.EditProfileConfirmController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditProfileConfirmController</servlet-name>
+        <url-pattern>/EditProfileConfirm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ValidationController</servlet-name>
+        <servlet-class>com.untar.controller.ValidationController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ValidationController</servlet-name>
+        <url-pattern>/Validation</url-pattern>
+    </servlet-mapping>
+
+</web-app>
